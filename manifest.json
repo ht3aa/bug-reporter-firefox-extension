@@ -3,8 +3,8 @@
   "name": "Bug Reporter",
   "version": "1.0",
   "permissions": [
-    "activeTab",
-    "storage"
+    "storage",
+    "activeTab"
   ],
   "background": {
     "scripts": ["background.js"],
@@ -23,4 +23,3 @@
     }
   }
 }
-
