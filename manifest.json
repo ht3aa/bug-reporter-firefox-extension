@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Bug Reporter",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Open Bug Reporter"
+  },
+  "commands": {
+    "create_bug_report": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+B"
+      },
+      "description": "Create a bug report"
+    }
+  }
+}
+

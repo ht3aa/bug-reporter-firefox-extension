@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bug Reporter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 10px;
+      background: #f9f9f9;
+    }
+    h1 {
+      font-size: 18px;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"], textarea {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <h1>Bug Reporter</h1>
+  <form id="bugForm">
+    <label for="title">Bug Title:</label>
+    <input type="text" id="title" required>
+    
+    <label for="prerequisites">Pre-requisites:</label>
+    <textarea id="prerequisites" required></textarea>
+    
+    <label for="steps">Steps:</label>
+    <textarea id="steps" required></textarea>
+    
+    <label for="testData">Test Data:</label>
+    <textarea id="testData"></textarea>
+    
+    <label for="expectedResult">Expected Result:</label>
+    <textarea id="expectedResult" required></textarea>
+    
+    <label for="actualResult">Actual Result:</label>
+    <textarea id="actualResult" required></textarea>
+    
+    <label for="pagePath">Page Path:</label>
+    <input type="text" id="pagePath" required>
+    
+    <button type="submit">Submit Report</button>
+  </form>
+</body>
+</html>
